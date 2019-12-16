@@ -53,6 +53,7 @@ public class Time {
         this.qntSocios = this.qntSocios + novoSocio;
     }
 
+<<<<<<< HEAD
     public void imprimeInfo(){
         System.out.println("Nome: " + getNome());
         System.out.println("Categoria: " + getCategoria());
@@ -60,5 +61,10 @@ public class Time {
         System.out.println("Quantidade de Socios: " + getQntSocios());
         System.out.println("Historico: " + getHistorico());
         System.out.println("Idade: " + calculaIdade());
+=======
+    public void contagemRegressiva(){
+        int centenario = 100 - calculaIdade();
+        System.out.println("Faltam " + centenario + " anos para o centenário do time!!!!!");  
+>>>>>>> 7dff93dd1dcee22509a64bd65dfd622a2041a10d
     }
 }
