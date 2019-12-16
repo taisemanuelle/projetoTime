@@ -3,15 +3,15 @@ package app;
 public class Time {
     private String nome;
     private String categoria;
-    private int anoCriacao;
-    private int qntSocios;
-    private String historico;
- 
+    private int anoCriacao = 0;
+    private int qntSocios = 0;
+    private String historico = "indefinido";
+
     public Time(String nome, String categoria) {
         this.nome = nome;
         this.categoria = categoria;
+        
     }
-
 
     public String getNome() {
         return nome;
@@ -32,6 +32,7 @@ public class Time {
     public String getHistorico() {
         return historico;
     }
+
     public void setAnoCriacao(int anoCriacao) {
         this.anoCriacao = anoCriacao;
     }
@@ -44,6 +45,12 @@ public class Time {
         this.historico = historico;
     }
 
-    
-     
+    public int calculaIdade(){
+      return anoCriacao - 2019;
+    }  
+
+    public void adicionaSocios(int novoSocio){
+        this.qntSocios = this.qntSocios + novoSocio;
+    }
+
 }
