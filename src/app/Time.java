@@ -45,7 +45,6 @@ public class Time {
         this.historico = historico;
     }
 
-
     public int calculaIdade(){
       return anoCriacao - 2019;
     }  
@@ -56,5 +55,6 @@ public class Time {
 
     public void contagemRegressiva(){
         int centenario = 100 - calculaIdade();
-        System.out.println("Faltam " + centenario + " anos para o centenário do time!!!!!");    }
+        System.out.println("Faltam " + centenario + " anos para o centenário do time!!!!!");  
+    }
 }
