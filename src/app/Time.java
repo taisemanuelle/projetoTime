@@ -3,6 +3,7 @@ package app;
 public class Time {
     private String nome;
     private String categoria;
+<<<<<<< HEAD
     private int anoCriacao;
     private int qntSocios;
     private String historico;
@@ -20,6 +21,16 @@ public class Time {
         this.historico = historico;
     }
 
+=======
+    private int anoCriacao = 0;
+    private int qntSocios = 0;
+    private String historico = "indefinido";
+
+    public Time(String nome, String categoria) {
+        this.nome = nome;
+        this.categoria = categoria;
+    }
+>>>>>>> dbda38d623ef9f005add0c9ef1f89a88ab22ede5
 
     public String getNome() {
         return nome;
@@ -42,5 +53,6 @@ public class Time {
     }
 
     
+
     
 }
