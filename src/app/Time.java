@@ -44,4 +44,8 @@ public class Time {
         this.historico = historico;
     }
 
+    public void adicionaSocios(int novoSocio){
+        this.qntSocios = this.qntSocios + novoSocio;
+    }
+
 }
