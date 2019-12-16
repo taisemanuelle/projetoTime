@@ -54,5 +54,7 @@ public class Time {
         this.qntSocios = this.qntSocios + novoSocio;
     }
 
-
+    public void contagemRegressiva(){
+        int centenario = 100 - calculaIdade();
+        System.out.println("Faltam " + centenario + " anos para o centenário do time!!!!!");    }
 }
