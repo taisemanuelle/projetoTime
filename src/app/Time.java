@@ -7,18 +7,21 @@ public class Time {
     private int qntSocios = 0;
     private String historico = "indefinido";
 
+    public Time() {
+        this.nome = "indefinido";
+        this.categoria = "indefinido";
+        this.anoCriacao = 0;
+        this.qntSocios =  0;
+        this.historico = "indefinido";
+    }
+
     public Time(String nome, String categoria) {
         this.nome = nome;
         this.categoria = categoria;
-        
     }
 
     public String getNome() {
         return nome;
-    }
-
-    public String getCategoria() {
-        return categoria;
     }
 
     public int getAnoCriacao() {
@@ -44,6 +47,14 @@ public class Time {
     public void setHistorico(String historico) {
         this.historico = historico;
     }
+    
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
 
     public int calculaIdade(){
       return anoCriacao - 2019;
@@ -67,4 +78,6 @@ public class Time {
         System.out.println("Faltam " + centenario + " anos para o centenário do time!!!!!");  
 
     }
+
+
 }
