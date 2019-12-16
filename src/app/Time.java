@@ -53,4 +53,12 @@ public class Time {
         this.qntSocios = this.qntSocios + novoSocio;
     }
 
+    public void imprimeInfo(){
+        System.out.println("Nome: " + getNome());
+        System.out.println("Categoria: " + getCategoria());
+        System.out.println("Ano de Criação: " + getAnoCriacao());
+        System.out.println("Quantidade de Socios: " + getQntSocios());
+        System.out.println("Historico: " + getHistorico());
+        System.out.println("Idade: " + calculaIdade());
+    }
 }
