@@ -13,18 +13,6 @@ public class Time {
         
     }
 
-    public void setAnoCriacao(int anoCriacao) {
-        this.anoCriacao = anoCriacao;
-    }
-
-    public void setQntSocios(int qntSocios) {
-        this.qntSocios = qntSocios;
-    }
-
-    public void setHistorico(String historico) {
-        this.historico = historico;
-    }
-
     public String getNome() {
         return nome;
     }
@@ -45,10 +33,26 @@ public class Time {
         return historico;
     }
 
-  public int calculaIdade(){
-      return anoCriacao - 2019;
-  }  
-    
+    public void setAnoCriacao(int anoCriacao) {
+        this.anoCriacao = anoCriacao;
+    }
 
-    
+    public void setQntSocios(int qntSocios) {
+        this.qntSocios = qntSocios;
+    }
+
+    public void setHistorico(String historico) {
+        this.historico = historico;
+    }
+
+
+    public int calculaIdade(){
+      return anoCriacao - 2019;
+    }  
+
+    public void adicionaSocios(int novoSocio){
+        this.qntSocios = this.qntSocios + novoSocio;
+    }
+
+
 }
