@@ -32,6 +32,9 @@ public class Time {
         return historico;
     }
 
+  public int calculaIdade(){
+      return anoCriacao - 2019;
+  }  
     
 
     
